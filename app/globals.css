@@ -1,22 +1,21 @@
-/* Import only the Bootstrap grid system for responsiveness */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
-/* Tailwind CSS Directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-color: #6C63FF; /* Electric Purple */
-  --secondary-color: #2A2D43; /* Dark Tech */
-  --accent-color: #00E5FF; /* Neon Blue */
-  --background-color: #F7F7FA;
+  --primary-color: #4F46E5; /* Blurple */
+  --secondary-color: #94A3B8; /* Slate Blue */
+  --accent-color: #F87171; /* Coral */
+  --background-color: #FFFFFF;
   --text-color: #222222;
-  --primary-color-rgb: 108, 99, 255; /* RGB values for --primary-color */
-  --shadow-glow: 0 0 15px rgba(108, 99, 255, 0.5), 0 0 30px rgba(0, 229, 255, 0.3);
-  --font-space-grotesk: "Space Grotesk", sans-serif;
-  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --primary-color-rgb: 79, 70, 229; /* RGB values for --primary-color */
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --glass-blur: 10px;
+  --border-radius-sm: 12px;
+  --border-radius-md: 20px;
+  --shadow-glow: 0 0 15px rgba(79, 70, 229, 0.5), 0 0 30px rgba(248, 113, 113, 0.3);
+  --font-headings: "Outfit", sans-serif;
+  --font-body: "Nunito", sans-serif;
 }
 /* ------------------------- */
 /* BASE & TYPOGRAPHY         */
@@ -24,12 +23,12 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--font-plus-jakarta-sans);
+  font-family: var(--font-body);
   overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-space-grotesk);
+  font-family: var(--font-headings);
   font-weight: 700;
   color: var(--secondary-color);
 }
@@ -49,20 +48,113 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3.5rem; /* Slightly increased margin for better spacing */
 }
 
+section {
+    padding: 80px 0;
+}
+
+/* ------------------------- */
+/* BUTTONS & LINKS           */
+/* ------------------------- */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-radius: var(--border-radius-sm);
+  padding: 12px 24px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, var(--primary-color), #3f3aaf);
+  border-color: #3f3aaf;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  border-radius: var(--border-radius-sm);
+  padding: 12px 24px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ------------------------- */
+/* NAVBAR STYLING            */
+/* ------------------------- */
+.navbar {
+  transition: background-color 0.4s ease-out, box-shadow 0.4s ease-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.navbar-brand {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  color: var(--secondary-color) !important;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 8px !important;
+  margin: 0 12px;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 70%;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.5rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 /* ------------------------- */
 /* HERO SECTION              */
 /* ------------------------- */
-.hero-section {  
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-top: 100px;
-  padding-bottom: 60px;
-  /* Enhanced background for the about section */
-  background: linear-gradient(135deg, var(--background-color) 0%, rgba(var(--primary-color-rgb), 0.03) 100%);
-  position: relative; /* Ensure positioning context for any future absolute elements */
-  background: radial-gradient(circle at 10% 20%, rgba(108, 99, 255, 0.05), transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.05), transparent 40%);
+.hero-intro-text {
+  display: inline-block;
+  font-family: var(--font-headings);
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: rgba(79, 70, 229, 0.1);
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
 }
 .hero-title {
   font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive font size */
@@ -72,13 +164,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-  font-family: var(--font-space-grotesk);
+  font-family: var(--font-headings);
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--secondary-color);
   font-weight: 500;
   height: 40px; /* Prevents layout shift from TypeAnimation */
 }
 
+.hero-description {
+  color: var(--secondary-color);
+  opacity: 0.8;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .futuristic-shape {
     width: 100%;
     max-width: 450px;
@@ -100,6 +199,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ------------------------- */
+/* ABOUT & GLASS CARD        */
+/* ------------------------- */
+.about-section {
+  position: relative;
+}
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+/* ------------------------- */
 /* FOOTER                    */
 /* ------------------------- */
 .footer {
@@ -118,6 +235,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+    section {
+        padding: 60px 0;
+    }
     .hero-section h1 {
         font-size: 2.8rem;
     }
@@ -143,6 +263,13 @@ h1, h2, h3, h4, h5, h6 {
 Hero Section Background Shapes
 ================================================================= */
 
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
 .hero-section {
   position: relative;
   overflow: hidden; /* This is important to contain the shapes */
@@ -181,17 +308,4 @@ Hero Section Background Shapes
   left: 45%;
   background-color: var(--primary-color);
   animation-delay: 8s;
-}
-
-/* Keyframes for the floating animation */
-@keyframes float {
-  0% {
-    transform: translateY(0px) translateX(0px);
-  }
-  50% {
-    transform: translateY(-20px) translateX(10px);
-  }
-  100% {
-    transform: translateY(0px) translateX(0px);
-  }
 }
