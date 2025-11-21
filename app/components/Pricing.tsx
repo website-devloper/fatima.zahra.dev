@@ -195,7 +195,7 @@ const Pricing = () => {
 
                                 <div className="mb-4">
                                     <h4 className="fw-bold text-white mb-2">{pkg.title}</h4>
-                                    <p className="text-muted small mb-3">{pkg.description}</p>
+                                    <p className="text-white small mb-3">{pkg.description}</p>
                                     <div className="pricing-price display-5 fw-bold mb-0">{pkg.price}</div>
                                 </div>
 
