@@ -1,9 +1,13 @@
+'use client';
 
 import Link from 'next/link';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import { useLocale } from './LocaleProvider';
 
 const Hero = () => {
+  const { t } = useLocale();
+
   return (
     <section id="home" className="hero-section position-relative overflow-hidden">
       {/* Background Decoration */}
@@ -16,23 +20,23 @@ const Hero = () => {
         <div className="row align-items-center">
           <div className="col-lg-7 text-center text-lg-start" data-aos="fade-right">
             <div className="why-badge mb-4" data-aos="fade-up" data-aos-delay="100">
-              <i className="bi bi-stars me-2"></i> Open to Exciting Projects
+              <i className="bi bi-stars me-2"></i> {t('hero.badge')}
             </div>
 
             <h1 className="hero-title" data-aos="fade-up" data-aos-delay="200">
-              Transforming Ideas Into
-              <span className="text-gradient"> Digital Reality</span>
+              {t('hero.title')}
+              <span className="text-gradient"> {t('hero.titleGradient')}</span>
             </h1>
 
             <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
               <TypeAnimation
                 sequence={[
-                  'Full Stack Developer', 2000,
-                  'React & Next.js Expert', 2000,
-                  'AI Solutions Architect', 2000,
-                  'WordPress Specialist', 2000,
-                  'Cloud Solutions Engineer', 2000,
-                  'UI/UX Designer', 2000,
+                  t('hero.typeAnimation.1'), 2000,
+                  t('hero.typeAnimation.2'), 2000,
+                  t('hero.typeAnimation.3'), 2000,
+                  t('hero.typeAnimation.4'), 2000,
+                  t('hero.typeAnimation.5'), 2000,
+                  t('hero.typeAnimation.6'), 2000,
                 ]}
                 wrapper="span"
                 speed={50}
@@ -42,30 +46,30 @@ const Hero = () => {
             </h2>
 
             <p className="lead text-white-100 mb-5" style={{ maxWidth: '600px' }} data-aos="fade-up" data-aos-delay="400">
-              I craft elegant, high-performance digital solutions that drive growth and exceed expectations. From sleek websites to intelligent automation systems—I build what you envision.
+              {t('hero.description')}
             </p>
 
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-delay="500">
               <Link href="#projects" className="btn btn-primary">
-                View My Work
+                {t('hero.cta.primary')}
               </Link>
               <Link href="#contact" className="btn btn-outline-primary">
-                Contact Me
+                {t('hero.cta.secondary')}
               </Link>
             </div>
 
             <div className="mt-5 d-flex align-items-center gap-4 justify-content-center justify-content-lg-start text-white small" data-aos="fade-up" data-aos-delay="600">
               <div className="d-flex align-items-center gap-2">
                 <i className="bi bi-check-circle-fill text-primary"></i>
-                <span>Pixel Perfect</span>
+                <span>{t('hero.features.1')}</span>
               </div>
               <div className="d-flex align-items-center gap-2">
                 <i className="bi bi-check-circle-fill text-primary"></i>
-                <span>Performance Optimized</span>
+                <span>{t('hero.features.2')}</span>
               </div>
               <div className="d-flex align-items-center gap-2">
                 <i className="bi bi-check-circle-fill text-primary"></i>
-                <span>SEO Ready</span>
+                <span>{t('hero.features.3')}</span>
               </div>
             </div>
           </div>
