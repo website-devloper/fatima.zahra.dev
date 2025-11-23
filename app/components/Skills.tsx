@@ -1,13 +1,60 @@
-// /app/components/Skills.tsx
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const skillsData = [
-  { icon: 'bi-code-slash', title: 'Frontend', description: 'HTML, CSS, JS, React, Next.js, Bootstrap', color: 'var(--primary-color)' },
-  { icon: 'bi-server', title: 'Backend', description: 'PHP, Laravel, Node.js', color: 'var(--secondary-color)' },
-  { icon: 'bi-database-fill', title: 'Databases', description: 'MySQL, MongoDB', color: 'var(--accent-cyan)' },
-  { icon: 'bi-tools', title: 'Tools & DevOps', description: 'Git, Docker, APIs, Linux basics', color: '#10b981' },
-  { icon: 'bi-robot', title: 'AI Tools', description: 'Automation workflows, chatbot integration', color: '#f59e0b' },
-  { icon: 'bi-shield-check', title: 'Cybersecurity', description: 'Cybersecurity basics and best practices', color: '#ef4444' },
+  {
+    icon: 'bi-code-slash',
+    title: 'Frontend',
+    description: 'HTML, CSS, JS, React, Next.js, Bootstrap',
+    color: 'linear-gradient(135deg, #6366f1, #8b5cf6)', // Indigo
+    shadow: 'rgba(99, 102, 241, 0.2)',
+    iconColor: '#818cf8',
+    bgAccent: 'rgba(99, 102, 241, 0.1)'
+  },
+  {
+    icon: 'bi-server',
+    title: 'Backend',
+    description: 'PHP, Laravel, Node.js',
+    color: 'linear-gradient(135deg, #f43f5e, #ec4899)', // Pink
+    shadow: 'rgba(244, 63, 94, 0.2)',
+    iconColor: '#fb7185',
+    bgAccent: 'rgba(244, 63, 94, 0.1)'
+  },
+  {
+    icon: 'bi-database-fill',
+    title: 'Databases',
+    description: 'MySQL, MongoDB',
+    color: 'linear-gradient(135deg, #06b6d4, #3b82f6)', // Cyan
+    shadow: 'rgba(6, 182, 212, 0.2)',
+    iconColor: '#22d3ee',
+    bgAccent: 'rgba(6, 182, 212, 0.1)'
+  },
+  {
+    icon: 'bi-tools',
+    title: 'Tools & DevOps',
+    description: 'Git, Docker, APIs, Linux basics',
+    color: 'linear-gradient(135deg, #10b981, #14b8a6)', // Emerald
+    shadow: 'rgba(16, 185, 129, 0.2)',
+    iconColor: '#34d399',
+    bgAccent: 'rgba(16, 185, 129, 0.1)'
+  },
+  {
+    icon: 'bi-robot',
+    title: 'AI Tools',
+    description: 'Automation workflows, chatbot integration',
+    color: 'linear-gradient(135deg, #f59e0b, #d97706)', // Amber
+    shadow: 'rgba(245, 158, 11, 0.2)',
+    iconColor: '#fbbf24',
+    bgAccent: 'rgba(245, 158, 11, 0.1)'
+  },
+  {
+    icon: 'bi-shield-check',
+    title: 'Cybersecurity',
+    description: 'Cybersecurity basics and best practices',
+    color: 'linear-gradient(135deg, #ef4444, #dc2626)', // Red
+    shadow: 'rgba(239, 68, 68, 0.2)',
+    iconColor: '#f87171',
+    bgAccent: 'rgba(239, 68, 68, 0.1)'
+  },
 ];
 
 const Skills = () => {
@@ -22,12 +69,25 @@ const Skills = () => {
         <div className="row g-4">
           {skillsData.map((skill, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="glass-panel p-4 h-100 text-center about-card" style={{ '--hover-color': skill.color } as React.CSSProperties}>
-                <div className="d-inline-flex align-items-center justify-content-center mb-4 rounded-circle icon-box" style={{ width: '80px', height: '80px', background: `color-mix(in srgb, ${skill.color}, transparent 90%)` }}>
-                  <i className={`bi ${skill.icon} fs-1`} style={{ color: skill.color }}></i>
+              <div
+                className="why-card h-100"
+                style={{
+                  '--card-gradient': skill.color,
+                  '--card-shadow': skill.shadow,
+                  '--icon-color': skill.iconColor,
+                  '--bg-accent': skill.bgAccent
+                } as React.CSSProperties}
+              >
+                <div className="card-glow"></div>
+                <div className="why-card-inner">
+                  <div className="card-blob"></div>
+                  <div className="why-icon-wrapper">
+                    <i className={`bi ${skill.icon}`}></i>
+                  </div>
+                  <h3 className="why-card-title">{skill.title}</h3>
+                  <p className="why-card-desc">{skill.description}</p>
+                  <div className="card-border-bottom"></div>
                 </div>
-                <h4 className="text-white mb-3">{skill.title}</h4>
-                <p className="text-white-100 mb-0">{skill.description}</p>
               </div>
             </div>
           ))}

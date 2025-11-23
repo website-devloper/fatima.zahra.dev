@@ -1,17 +1,21 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-bg-glow"></div>
-      <div className="hero-bg-glow-2"></div>
+    <section id="home" className="hero-section position-relative overflow-hidden">
+      {/* Background Decoration */}
+      <div className="why-bg-decoration">
+        <div className="blob blob-1" style={{ top: '-10%', left: '-10%', opacity: 0.2 }}></div>
+        <div className="blob blob-2" style={{ bottom: '-10%', right: '-10%', opacity: 0.2 }}></div>
+      </div>
 
-      <div className="container pt-5">
+      <div className="container pt-5 position-relative z-1">
         <div className="row align-items-center">
-          <div className="col-lg-7 text-center text-lg-start z-1">
-            <div className="hero-badge">
+          <div className="col-lg-7 text-center text-lg-start">
+            <div className="why-badge mb-4">
               <i className="bi bi-stars me-2"></i> Available for Freelance
             </div>
 
@@ -21,7 +25,6 @@ const Hero = () => {
             </h1>
 
             <h2 className="hero-subtitle">
-
               <TypeAnimation
                 sequence={[
                   'Full Stack Development', 2000,
@@ -74,7 +77,7 @@ const Hero = () => {
                 alt="Developer Portrait"
                 width={600}
                 height={600}
-                className="img-fluid position-relative"
+                className="img-fluid position-relative z-1"
                 style={{ borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%' }}
                 priority
               />
