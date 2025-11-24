@@ -6,6 +6,7 @@
         "projects": "Projets",
         "services": "Services",
         "testimonials": "Témoignages",
+        "blog": "Blog",
         "contact": "Contact"
     },
     "hero": {
@@ -159,6 +160,13 @@
         "copyright": "Tous Droits Réservés.",
         "privacyPolicy": "Politique de Confidentialité",
         "termsOfService": "Conditions d'Utilisation"
+    },
+    "blog": {
+        "subtitle": "Derniers Articles",
+        "title": "Blog &",
+        "titleGradient": "Articles",
+        "description": "Explorez mes réflexions sur le développement web, les tendances technologiques et des conseils pratiques pour vous aider à créer de meilleures expériences numériques.",
+        "viewAll": "Voir Tous les Articles"
     },
     "whyChooseMe": {
         "subtitle": "Ma Proposition de Valeur",

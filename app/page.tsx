@@ -11,6 +11,7 @@ import WhyChooseMe from './components/Whychooseme';
 import Pricing from './components/Pricing';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Blog from './components/Blog';
 import Footer from './components/Footer';
 import './globals.css';
 import AOS from 'aos';
@@ -90,6 +91,9 @@ export default function Home() {
             </div> */}
               <div id="testimonials">
                 <Testimonials />
+              </div>
+              <div id="blog">
+                <Blog />
               </div>
               <div id="contact">
                 <Contact />

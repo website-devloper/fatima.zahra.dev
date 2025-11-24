@@ -6,6 +6,7 @@
         "projects": "Projects",
         "services": "Services",
         "testimonials": "Testimonials",
+        "blog": "Blog",
         "contact": "Contact"
     },
     "hero": {
@@ -159,6 +160,13 @@
         "copyright": "All Rights Reserved.",
         "privacyPolicy": "Privacy Policy",
         "termsOfService": "Terms of Service"
+    },
+    "blog": {
+        "subtitle": "Latest Insights",
+        "title": "Blog &",
+        "titleGradient": "Articles",
+        "description": "Explore my thoughts on web development, technology trends, and practical tips to help you build better digital experiences.",
+        "viewAll": "View All Posts"
     },
     "whyChooseMe": {
         "subtitle": "My Value Proposition",

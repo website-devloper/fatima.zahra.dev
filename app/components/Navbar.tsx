@@ -11,7 +11,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
-  const navItems = ['home', 'about', 'skills', 'projects', 'services', 'testimonials', 'contact'];
+  const navItems = ['home', 'about', 'skills', 'projects', 'services', 'testimonials', 'blog', 'contact'];
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
