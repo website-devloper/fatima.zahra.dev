@@ -26,26 +26,17 @@ const Contact = () => {
         setSubmitStatus('idle');
 
         try {
-            // Try to save to database (optional - will work once MongoDB is configured)
-            try {
-                await fetch('/api/contacts', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ ...formData, status: 'new' }),
-                });
-            } catch (dbError) {
-                // Database save failed, but continue with email
-                console.log('Database not configured yet - email will still be sent');
-            }
-
-            // Send email using FormSubmit (this always works)
-            const formElement = e.currentTarget;
-            const formSubmitData = new FormData(formElement);
-
-            await fetch('https://formsubmit.co/fatimazahra20033@gmail.com', {
+            const response = await fetch('/api/contacts', {
                 method: 'POST',
-                body: formSubmitData
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ ...formData, status: 'new' }),
             });
+
+            const data = await response.json();
+
+            if (!response.ok || !data.success) {
+                throw new Error(data.error || 'Failed to send message');
+            }
 
             setSubmitStatus('success');
             setFormData({ name: '', email: '', subject: '', message: '' });
@@ -108,9 +99,6 @@ const Contact = () => {
                                 </div>
 
                                 <form className="contact-form position-relative z-2" onSubmit={handleSubmit}>
-                                    <input type="hidden" name="_template" value="table" />
-                                    <input type="hidden" name="_captcha" value="false" />
-
                                     <div className="row">
                                         <div className="col-md-6 mb-4">
                                             <div className="form-group">
