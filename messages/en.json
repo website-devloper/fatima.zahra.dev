@@ -10,9 +10,9 @@
         "contact": "Contact"
     },
     "hero": {
-        "badge": "Open to Exciting Projects",
-        "title": "Transforming Ideas Into",
-        "titleGradient": "Digital Reality",
+        "badge": "Available for New Projects",
+        "title": "Bringing Your Ideas to",
+        "titleGradient": "Life Online",
         "typeAnimation": {
             "1": "Full Stack Developer",
             "2": "React & Next.js Expert",
@@ -21,55 +21,55 @@
             "5": "Cloud Solutions Engineer",
             "6": "UI/UX Designer"
         },
-        "description": "I craft elegant, high-performance digital solutions that drive growth and exceed expectations. From sleek websites to intelligent automation systems—I build what you envision.",
+        "description": "I help businesses and individuals build powerful digital solutions that actually work. Whether you need a sleek website, smart automation, or a complete web app—let's make it happen together.",
         "cta": {
-            "primary": "View My Work",
-            "secondary": "Contact Me"
+            "primary": "See My Work",
+            "secondary": "Let's Talk"
         },
         "features": {
             "1": "Pixel Perfect",
-            "2": "Performance Optimized",
-            "3": "SEO Ready"
+            "2": "Lightning Fast",
+            "3": "SEO Friendly"
         }
     },
     "about": {
         "subtitle": "About Me",
-        "title": "Who I",
-        "titleGradient": "Am",
-        "intro": "Hi! I'm <strong>Fatima Zahra Sabbar</strong>, a passionate <strong>Full Stack Developer</strong> and <strong>IT Solutions Specialist</strong> dedicated to transforming complex challenges into elegant, efficient digital solutions.",
-        "description": "With over 3 years of hands-on experience, I specialize in creating modern, secure, and scalable web applications that drive real business value. My expertise spans from crafting pixel-perfect user interfaces to architecting robust backend systems and implementing intelligent automation workflows. I'm not just about writing code—I'm about delivering solutions that make a tangible impact on your business growth and efficiency.",
+        "title": "Nice to",
+        "titleGradient": "Meet You",
+        "intro": "Hey! I'm <strong>Fatima Zahra Sabbar</strong>, a <strong>Full Stack Developer</strong> and <strong>IT specialist</strong> who loves turning complicated problems into simple, effective digital solutions.",
+        "description": "I've been building websites and apps for over 3 years now, and honestly? I still get excited about every new project. My sweet spot is creating stuff that's not just pretty to look at, but actually makes life easier for the people using it. From sleek user interfaces to solid backend systems and smart automation—I handle it all. For me, it's not just about writing code; it's about creating something that really moves the needle for your business.",
         "stats": {
             "experience": "Years Exp.",
             "projects": "Projects",
-            "satisfaction": "Satisfaction"
+            "satisfaction": "Happy Clients"
         },
         "cards": {
             "fullstack": {
                 "title": "Full Stack Development",
-                "description": "I build end-to-end web solutions using cutting-edge technologies like React, Next.js, and Node.js to create fast, scalable applications."
+                "description": "I build complete web solutions using modern tech like React, Next.js, and Node.js. Fast, scalable, and built to last."
             },
             "ai": {
                 "title": "AI & Automation",
-                "description": "I leverage AI and custom automation to streamline workflows, eliminate repetitive tasks, and boost productivity dramatically."
+                "description": "Let's face it—nobody likes repetitive tasks. I use AI and custom automation to handle the boring stuff, so you can focus on what matters."
             },
             "wordpress": {
                 "title": "WordPress & CMS",
-                "description": "I create beautiful, user-friendly WordPress sites with custom themes and plugins that perfectly match your brand identity."
+                "description": "Need a WordPress site? I create custom themes and plugins that match your brand perfectly and are easy for you to manage."
             },
             "it": {
                 "title": "IT Consulting",
-                "description": "I provide expert IT consultation and implement secure, scalable infrastructure solutions tailored to your business needs."
+                "description": "Sometimes you just need someone who gets it. I help businesses set up secure, scalable tech infrastructure that actually makes sense."
             }
         }
     },
     "skills": {
         "subtitle": "My Toolbox",
-        "title": "Skills &",
-        "titleGradient": "Technologies",
+        "title": "What I Work",
+        "titleGradient": "With",
         "items": {
             "frontend": {
                 "title": "Frontend",
-                "description": "HTML, CSS, JS, React, Next.js, Bootstrap"
+                "description": "HTML, CSS, JavaScript, React, Next.js, Bootstrap"
             },
             "backend": {
                 "title": "Backend",
@@ -89,67 +89,67 @@
             },
             "security": {
                 "title": "Cybersecurity",
-                "description": "Cybersecurity basics and best practices"
+                "description": "Security fundamentals and best practices"
             }
         }
     },
     "projects": {
         "subtitle": "My Work",
-        "title": "Featured",
+        "title": "Recent",
         "titleGradient": "Projects"
     },
     "services": {
-        "subtitle": "What I Offer",
-        "title": "Personal",
-        "titleGradient": "Services",
+        "subtitle": "What I Do",
+        "title": "How I Can",
+        "titleGradient": "Help You",
         "items": {
             "webdev": {
                 "title": "Website & Web App Development",
-                "description": "Creating responsive, high-performance websites and applications tailored to your personal or business needs."
+                "description": "I build responsive, fast-loading websites and web apps that work beautifully on any device."
             },
             "automation": {
                 "title": "IT & Automation Solutions",
-                "description": "Building custom scripts and AI-powered workflows to automate repetitive tasks and boost your efficiency."
+                "description": "Custom scripts and AI-powered workflows that handle repetitive tasks automatically—because your time is valuable."
             },
             "uiux": {
                 "title": "UI/UX Design",
-                "description": "Designing intuitive, user-friendly interfaces with a clean and modern aesthetic for your digital projects."
+                "description": "Clean, modern interfaces that people actually enjoy using. Good design isn't just about looking good—it's about working well."
             },
             "mobile": {
                 "title": "Mobile App Development",
-                "description": "Building cross-platform mobile applications that provide seamless user experiences on iOS and Android."
+                "description": "Cross-platform mobile apps that give your users a smooth experience on both iOS and Android."
             },
             "seo": {
                 "title": "SEO & Digital Marketing",
-                "description": "Optimizing your online presence to drive traffic, improve rankings, and grow your business reach."
+                "description": "Getting your site to rank higher in search results, so the right people can actually find you online."
             },
             "cloud": {
                 "title": "Cloud Solutions",
-                "description": "Deploying and managing secure, scalable cloud infrastructure to support your growing applications."
+                "description": "Secure, scalable cloud infrastructure that grows with your business and keeps your data safe."
             }
         }
     },
     "testimonials": {
         "subtitle": "Testimonials",
-        "title": "What",
-        "titleGradient": "Others Say"
+        "title": "Client",
+        "titleGradient": "Feedback"
     },
     "contact": {
         "subtitle": "Get in Touch",
-        "title": "Contact",
-        "titleGradient": "Me",
-        "formTitle": "Let's Work Together",
-        "formDescription": "Have a project in mind or just want to say hello? Feel free to reach out! I'm always open to discussing new ideas and opportunities.",
+        "title": "Let's",
+        "titleGradient": "Connect",
+        "formTitle": "Let's Build Something Great",
+        "formDescription": "Got a project in mind? Just want to chat about an idea? Drop me a message—I'd love to hear from you!",
         "placeholders": {
             "name": "Your Name",
             "email": "Your Email",
-            "subject": "Subject",
-            "message": "Your Message"
+            "subject": "What's this about?",
+            "message": "Tell me about your project..."
         },
         "button": "Send Message"
     },
     "footer": {
-        "tagline": "Crafting digital experiences that merge creativity with code.",
+        "tagline": "Turning ideas into reality, one line of code at a time.",
         "navItems": [
             "Home",
             "About",
@@ -162,33 +162,33 @@
         "termsOfService": "Terms of Service"
     },
     "blog": {
-        "subtitle": "Latest Insights",
-        "title": "Blog &",
-        "titleGradient": "Articles",
-        "description": "Explore my thoughts on web development, technology trends, and practical tips to help you build better digital experiences.",
-        "viewAll": "View All Posts"
+        "subtitle": "Latest Posts",
+        "title": "From the",
+        "titleGradient": "Blog",
+        "description": "Thoughts on web development, tech trends, and practical tips I've learned along the way.",
+        "viewAll": "Read All Posts"
     },
     "whyChooseMe": {
-        "subtitle": "My Value Proposition",
-        "title": "Why Work",
-        "titleGradient": "With Me?",
-        "description": "I don't just deliver code—I deliver results. When you work with me, you get a dedicated partner who's genuinely invested in your success and committed to bringing your digital vision to life.",
+        "subtitle": "Why Me?",
+        "title": "What Makes Me",
+        "titleGradient": "Different",
+        "description": "Look, there are plenty of developers out there. But here's what you get when we work together: someone who genuinely cares about your project's success and treats it like it's my own.",
         "reasons": {
             "innovative": {
-                "title": "Innovative Thinking",
-                "description": "I approach every project with fresh perspectives and creative problem-solving, turning your vision into reality with cutting-edge solutions that stand out."
+                "title": "Fresh Perspectives",
+                "description": "I don't do cookie-cutter solutions. Every project gets my full creative attention to build something that stands out and actually works for you."
             },
             "reliable": {
-                "title": "Reliable & On-Time",
-                "description": "Your time is valuable. I pride myself on delivering exceptional quality within agreed deadlines, keeping you informed every step of the way."
+                "title": "On Time, Every Time",
+                "description": "Your time matters. I stick to deadlines, keep you in the loop, and deliver quality work when I say I will."
             },
             "excellence": {
-                "title": "Excellence-Driven",
-                "description": "I'm committed to delivering nothing less than exceptional. Using the latest technologies and best practices, I build robust, scalable, and maintainable solutions."
+                "title": "Quality Over Everything",
+                "description": "I'm a bit of a perfectionist (in a good way). Using the latest tech and best practices, I build things that last and perform well."
             },
             "partnership": {
-                "title": "Ongoing Partnership",
-                "description": "My relationship with clients doesn't end at launch. I provide continuous support and maintenance to ensure your project thrives long-term."
+                "title": "In It for the Long Haul",
+                "description": "Launch day isn't goodbye. I stick around to make sure everything runs smoothly and help you grow over time."
             }
         }
     }

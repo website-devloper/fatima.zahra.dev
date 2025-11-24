@@ -10,9 +10,9 @@
         "contact": "Contact"
     },
     "hero": {
-        "badge": "Disponible pour des Projets Passionnants",
-        "title": "Transformer les Idées en",
-        "titleGradient": "Réalité Numérique",
+        "badge": "Disponible pour de Nouveaux Projets",
+        "title": "Donnons Vie à Vos Idées",
+        "titleGradient": "en Ligne",
         "typeAnimation": {
             "1": "Développeuse Full Stack",
             "2": "Experte React & Next.js",
@@ -21,55 +21,55 @@
             "5": "Ingénieure Cloud",
             "6": "Designer UI/UX"
         },
-        "description": "Je crée des solutions numériques élégantes et performantes qui stimulent la croissance et dépassent les attentes. Des sites web élégants aux systèmes d'automation intelligents—je construis ce que vous envisagez.",
+        "description": "J'aide les entreprises et les particuliers à créer des solutions numériques puissantes qui fonctionnent vraiment. Que vous ayez besoin d'un site web élégant, d'automatisation intelligente ou d'une application complète—faisons-le ensemble.",
         "cta": {
             "primary": "Voir Mon Travail",
-            "secondary": "Me Contacter"
+            "secondary": "Discutons"
         },
         "features": {
-            "1": "Pixel Parfait",
-            "2": "Performance Optimisée",
-            "3": "Prêt pour le SEO"
+            "1": "Au Pixel Près",
+            "2": "Ultra Rapide",
+            "3": "SEO Optimisé"
         }
     },
     "about": {
-        "subtitle": "À Propos de Moi",
-        "title": "Qui Je",
-        "titleGradient": "Suis",
-        "intro": "Bonjour ! Je suis <strong>Fatima Zahra Sabbar</strong>, une <strong>Développeuse Full Stack</strong> passionnée et <strong>Spécialiste en Solutions IT</strong> dédiée à transformer les défis complexes en solutions numériques élégantes et efficaces.",
-        "description": "Avec plus de 3 ans d'expérience pratique, je me spécialise dans la création d'applications web modernes, sécurisées et évolutives qui génèrent une véritable valeur commerciale. Mon expertise s'étend de la création d'interfaces utilisateur au pixel près à l'architecture de systèmes backend robustes et à la mise en œuvre de flux d'automatisation intelligents. Je ne me contente pas d'écrire du code—je livre des solutions qui ont un impact tangible sur la croissance et l'efficacité de votre entreprise.",
+        "subtitle": "À Propos",
+        "title": "Enchantée de Vous",
+        "titleGradient": "Rencontrer",
+        "intro": "Salut ! Je suis <strong>Fatima Zahra Sabbar</strong>, <strong>Développeuse Full Stack</strong> et <strong>spécialiste IT</strong> qui adore transformer des problèmes complexes en solutions numériques simples et efficaces.",
+        "description": "Je crée des sites web et des applications depuis plus de 3 ans maintenant, et honnêtement ? Je suis toujours aussi enthousiaste pour chaque nouveau projet. Mon point fort, c'est de créer des choses qui ne sont pas seulement belles à regarder, mais qui facilitent vraiment la vie des utilisateurs. Des interfaces soignées aux systèmes backend solides en passant par l'automatisation intelligente—je gère tout. Pour moi, il ne s'agit pas seulement d'écrire du code ; il s'agit de créer quelque chose qui fait vraiment bouger les choses pour votre entreprise.",
         "stats": {
             "experience": "Ans d'Exp.",
             "projects": "Projets",
-            "satisfaction": "Satisfaction"
+            "satisfaction": "Clients Satisfaits"
         },
         "cards": {
             "fullstack": {
                 "title": "Développement Full Stack",
-                "description": "Je construis des solutions web complètes en utilisant des technologies de pointe comme React, Next.js et Node.js pour créer des applications rapides et évolutives."
+                "description": "Je construis des solutions web complètes avec des technologies modernes comme React, Next.js et Node.js. Rapide, évolutif et fait pour durer."
             },
             "ai": {
                 "title": "IA & Automatisation",
-                "description": "J'exploite l'IA et l'automatisation personnalisée pour rationaliser les flux de travail, éliminer les tâches répétitives et augmenter considérablement la productivité."
+                "description": "Soyons honnêtes—personne n'aime les tâches répétitives. J'utilise l'IA et l'automatisation sur mesure pour gérer les trucs ennuyeux, pour que vous puissiez vous concentrer sur l'essentiel."
             },
             "wordpress": {
                 "title": "WordPress & CMS",
-                "description": "Je crée de beaux sites WordPress conviviaux avec des thèmes et plugins personnalisés qui correspondent parfaitement à l'identité de votre marque."
+                "description": "Besoin d'un site WordPress ? Je crée des thèmes et plugins personnalisés qui correspondent parfaitement à votre marque et sont faciles à gérer."
             },
             "it": {
                 "title": "Conseil IT",
-                "description": "Je fournis des consultations IT expertes et mets en œuvre des solutions d'infrastructure sécurisées et évolutives adaptées à vos besoins professionnels."
+                "description": "Parfois, vous avez juste besoin de quelqu'un qui comprend. J'aide les entreprises à mettre en place une infrastructure technologique sécurisée et évolutive qui a du sens."
             }
         }
     },
     "skills": {
         "subtitle": "Ma Boîte à Outils",
-        "title": "Compétences &",
-        "titleGradient": "Technologies",
+        "title": "Avec Quoi Je",
+        "titleGradient": "Travaille",
         "items": {
             "frontend": {
                 "title": "Frontend",
-                "description": "HTML, CSS, JS, React, Next.js, Bootstrap"
+                "description": "HTML, CSS, JavaScript, React, Next.js, Bootstrap"
             },
             "backend": {
                 "title": "Backend",
@@ -85,71 +85,71 @@
             },
             "ai": {
                 "title": "Outils IA",
-                "description": "Flux d'automatisation, intégration de chatbot"
+                "description": "Automatisation, intégration de chatbots"
             },
             "security": {
                 "title": "Cybersécurité",
-                "description": "Bases de cybersécurité et meilleures pratiques"
+                "description": "Fondamentaux de sécurité et bonnes pratiques"
             }
         }
     },
     "projects": {
         "subtitle": "Mon Travail",
         "title": "Projets",
-        "titleGradient": "En Vedette"
+        "titleGradient": "Récents"
     },
     "services": {
-        "subtitle": "Ce Que J'Offre",
-        "title": "Services",
-        "titleGradient": "Personnels",
+        "subtitle": "Ce Que Je Fais",
+        "title": "Comment Je Peux",
+        "titleGradient": "Vous Aider",
         "items": {
             "webdev": {
                 "title": "Développement Web & Applications",
-                "description": "Création de sites web et d'applications responsives et performants, adaptés à vos besoins personnels ou professionnels."
+                "description": "Je crée des sites web et applications responsive et rapides qui fonctionnent parfaitement sur n'importe quel appareil."
             },
             "automation": {
                 "title": "Solutions IT & Automatisation",
-                "description": "Création de scripts personnalisés et de flux de travail alimentés par l'IA pour automatiser les tâches répétitives et augmenter votre efficacité."
+                "description": "Scripts personnalisés et workflows automatisés par IA qui gèrent les tâches répétitives—parce que votre temps est précieux."
             },
             "uiux": {
                 "title": "Design UI/UX",
-                "description": "Conception d'interfaces intuitives et conviviales avec une esthétique propre et moderne pour vos projets numériques."
+                "description": "Des interfaces propres et modernes que les gens aiment vraiment utiliser. Le bon design, ce n'est pas juste joli—c'est efficace."
             },
             "mobile": {
-                "title": "Développement d'Applications Mobiles",
-                "description": "Création d'applications mobiles multiplateformes offrant des expériences utilisateur fluides sur iOS et Android."
+                "title": "Développement Mobile",
+                "description": "Applications mobiles multiplateformes qui offrent une expérience fluide sur iOS et Android."
             },
             "seo": {
                 "title": "SEO & Marketing Digital",
-                "description": "Optimisation de votre présence en ligne pour générer du trafic, améliorer le classement et développer votre portée commerciale."
+                "description": "Améliorer votre classement dans les résultats de recherche, pour que les bonnes personnes puissent vous trouver en ligne."
             },
             "cloud": {
                 "title": "Solutions Cloud",
-                "description": "Déploiement et gestion d'une infrastructure cloud sécurisée et évolutive pour soutenir vos applications en croissance."
+                "description": "Infrastructure cloud sécurisée et évolutive qui grandit avec votre entreprise et protège vos données."
             }
         }
     },
     "testimonials": {
         "subtitle": "Témoignages",
-        "title": "Ce Que",
-        "titleGradient": "Disent les Autres"
+        "title": "Retours",
+        "titleGradient": "Clients"
     },
     "contact": {
-        "subtitle": "Contactez-Moi",
-        "title": "Me",
-        "titleGradient": "Contacter",
-        "formTitle": "Travaillons Ensemble",
-        "formDescription": "Vous avez un projet en tête ou vous voulez simplement dire bonjour ? N'hésitez pas à me contacter ! Je suis toujours ouverte à discuter de nouvelles idées et opportunités.",
+        "subtitle": "Restons en Contact",
+        "title": "Connectons",
+        "titleGradient": "Nous",
+        "formTitle": "Créons Quelque Chose d'Incroyable",
+        "formDescription": "Un projet en tête ? Envie de discuter d'une idée ? Envoyez-moi un message—j'adorerais avoir de vos nouvelles !",
         "placeholders": {
             "name": "Votre Nom",
             "email": "Votre Email",
-            "subject": "Sujet",
-            "message": "Votre Message"
+            "subject": "De quoi s'agit-il ?",
+            "message": "Parlez-moi de votre projet..."
         },
-        "button": "Envoyer le Message"
+        "button": "Envoyer"
     },
     "footer": {
-        "tagline": "Créer des expériences numériques qui fusionnent créativité et code.",
+        "tagline": "Transformer des idées en réalité, une ligne de code à la fois.",
         "navItems": [
             "Accueil",
             "À Propos",
@@ -158,37 +158,37 @@
             "Contact"
         ],
         "copyright": "Tous Droits Réservés.",
-        "privacyPolicy": "Politique de Confidentialité",
-        "termsOfService": "Conditions d'Utilisation"
+        "privacyPolicy": "Confidentialité",
+        "termsOfService": "Conditions"
     },
     "blog": {
         "subtitle": "Derniers Articles",
-        "title": "Blog &",
-        "titleGradient": "Articles",
-        "description": "Explorez mes réflexions sur le développement web, les tendances technologiques et des conseils pratiques pour vous aider à créer de meilleures expériences numériques.",
-        "viewAll": "Voir Tous les Articles"
+        "title": "Du",
+        "titleGradient": "Blog",
+        "description": "Mes réflexions sur le développement web, les tendances tech, et les astuces pratiques que j'ai apprises en chemin.",
+        "viewAll": "Tous les Articles"
     },
     "whyChooseMe": {
-        "subtitle": "Ma Proposition de Valeur",
-        "title": "Pourquoi Travailler",
-        "titleGradient": "Avec Moi ?",
-        "description": "Je ne livre pas que du code—je livre des résultats. Lorsque vous travaillez avec moi, vous obtenez un partenaire dévoué qui est véritablement investi dans votre succès et engagé à donner vie à votre vision numérique.",
+        "subtitle": "Pourquoi Moi ?",
+        "title": "Ce Qui Me Rend",
+        "titleGradient": "Différente",
+        "description": "Écoutez, il y a plein de développeurs là-bas. Mais voici ce que vous obtenez en travaillant avec moi : quelqu'un qui se soucie vraiment du succès de votre projet et le traite comme le sien.",
         "reasons": {
             "innovative": {
-                "title": "Pensée Innovante",
-                "description": "J'aborde chaque projet avec des perspectives nouvelles et une résolution de problèmes créative, transformant votre vision en réalité avec des solutions de pointe qui se démarquent."
+                "title": "Perspectives Fraîches",
+                "description": "Je ne fais pas de solutions toutes faites. Chaque projet reçoit toute mon attention créative pour créer quelque chose qui se démarque et fonctionne vraiment pour vous."
             },
             "reliable": {
-                "title": "Fiable & Ponctuel",
-                "description": "Votre temps est précieux. Je suis fière de livrer une qualité exceptionnelle dans les délais convenus, en vous tenant informé à chaque étape."
+                "title": "Toujours à l'Heure",
+                "description": "Votre temps compte. Je respecte les délais, vous tiens informé, et livre un travail de qualité quand je le dis."
             },
             "excellence": {
-                "title": "Axée sur l'Excellence",
-                "description": "Je m'engage à ne rien livrer de moins qu'exceptionnel. En utilisant les dernières technologies et les meilleures pratiques, je construis des solutions robustes, évolutives et maintenables."
+                "title": "La Qualité Avant Tout",
+                "description": "Je suis un peu perfectionniste (dans le bon sens). Avec les dernières technos et les meilleures pratiques, je construis des choses qui durent et performent."
             },
             "partnership": {
-                "title": "Partenariat Continu",
-                "description": "Ma relation avec les clients ne se termine pas au lancement. Je fournis un support et une maintenance continus pour garantir que votre projet prospère à long terme."
+                "title": "Dans la Durée",
+                "description": "Le jour du lancement n'est pas un au revoir. Je reste pour m'assurer que tout fonctionne bien et vous aide à grandir avec le temps."
             }
         }
     }
