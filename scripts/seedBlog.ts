@@ -2,15 +2,38 @@
 // Run with: node --loader ts-node/esm scripts/seedBlog.ts
 // Or add to package.json: "seed": "node scripts/seedBlog.js"
 
-import dbConnect from '../lib/mongodb';
-import BlogPost from '../models/BlogPost';
+import fs from 'fs';
+import path from 'path';
+
+// Load environment variables from .env.local if not already set
+if (!process.env.MONGODB_URI) {
+  try {
+    const envPath = path.join(process.cwd(), '.env.local');
+    if (fs.existsSync(envPath)) {
+      const envContent = fs.readFileSync(envPath, 'utf-8');
+      envContent.split('\n').forEach(line => {
+        const match = line.match(/^([^=]+)=(.*)$/);
+        if (match) {
+          const key = match[1].trim();
+          const value = match[2].trim();
+          if (!process.env[key]) {
+            process.env[key] = value;
+          }
+        }
+      });
+      console.log('Loaded environment variables from .env.local');
+    }
+  } catch (error) {
+    console.warn('Failed to load .env.local:', error);
+  }
+}
 
 const seedPosts = [
-    {
-        slug: 'modern-web-development-trends-2024',
-        title: 'Modern Web Development Trends in 2024',
-        excerpt: 'Explore the latest trends shaping the future of web development, from AI integration to progressive web apps.',
-        content: `
+  {
+    slug: 'modern-web-development-trends-2024',
+    title: 'Modern Web Development Trends in 2024',
+    excerpt: 'Explore the latest trends shaping the future of web development, from AI integration to progressive web apps.',
+    content: `
       <h2>Introduction</h2>
       <p>The web development landscape is evolving rapidly, and 2024 brings exciting new trends that are reshaping how we build digital experiences. In this article, we'll explore the most important trends that every developer should know about.</p>
       
@@ -29,18 +52,18 @@ const seedPosts = [
       <h2>Conclusion</h2>
       <p>Staying updated with these trends is crucial for building competitive, modern web applications. As we move forward, the focus remains on performance, user experience, and developer productivity.</p>
     `,
-        image: '/blog/web-trends.jpg',
-        author: 'Fatima Zahra Sabbar',
-        category: 'Web Development',
-        tags: ['React', 'Next.js', 'AI', 'PWA', 'TypeScript'],
-        readTime: '5 min read',
-        published: true,
-    },
-    {
-        slug: 'building-scalable-applications-with-nextjs',
-        title: 'Building Scalable Applications with Next.js',
-        excerpt: 'Learn best practices for creating high-performance, scalable web applications using Next.js and modern development patterns.',
-        content: `
+    image: '/blog/web-trends.jpg',
+    author: 'Fatima Zahra Sabbar',
+    category: 'Web Development',
+    tags: ['React', 'Next.js', 'AI', 'PWA', 'TypeScript'],
+    readTime: '5 min read',
+    published: true,
+  },
+  {
+    slug: 'building-scalable-applications-with-nextjs',
+    title: 'Building Scalable Applications with Next.js',
+    excerpt: 'Learn best practices for creating high-performance, scalable web applications using Next.js and modern development patterns.',
+    content: `
       <h2>Why Next.js?</h2>
       <p>Next.js has become the go-to framework for building production-ready React applications. Its powerful features like server-side rendering, static site generation, and API routes make it perfect for scalable applications.</p>
       
@@ -65,18 +88,18 @@ const seedPosts = [
       <h2>Conclusion</h2>
       <p>Next.js provides all the tools you need to build scalable, performant applications. By following these best practices, you can create applications that handle millions of users while maintaining excellent performance.</p>
     `,
-        image: '/blog/nextjs-scalable.jpg',
-        author: 'Fatima Zahra Sabbar',
-        category: 'Development',
-        tags: ['Next.js', 'React', 'Scalability', 'Performance'],
-        readTime: '7 min read',
-        published: true,
-    },
-    {
-        slug: 'automation-workflows-boost-productivity',
-        title: 'How Automation Workflows Can Boost Your Productivity',
-        excerpt: 'Discover how implementing smart automation workflows can save hours of manual work and supercharge your productivity.',
-        content: `
+    image: '/blog/nextjs-scalable.jpg',
+    author: 'Fatima Zahra Sabbar',
+    category: 'Development',
+    tags: ['Next.js', 'React', 'Scalability', 'Performance'],
+    readTime: '7 min read',
+    published: true,
+  },
+  {
+    slug: 'automation-workflows-boost-productivity',
+    title: 'How Automation Workflows Can Boost Your Productivity',
+    excerpt: 'Discover how implementing smart automation workflows can save hours of manual work and supercharge your productivity.',
+    content: `
       <h2>The Power of Automation</h2>
       <p>In today's fast-paced digital world, automation isn't just a luxury—it's a necessity. By automating repetitive tasks, you can focus on what truly matters: creative problem-solving and strategic thinking.</p>
       
@@ -103,18 +126,18 @@ const seedPosts = [
       <h2>Getting Started</h2>
       <p>Start small by identifying one repetitive task in your workflow. Automate it, measure the time saved, and gradually expand to other areas. The cumulative effect can be transformative.</p>
     `,
-        image: '/blog/automation.jpg',
-        author: 'Fatima Zahra Sabbar',
-        category: 'Productivity',
-        tags: ['Automation', 'AI', 'Productivity', 'Workflows'],
-        readTime: '6 min read',
-        published: true,
-    },
-    {
-        slug: 'mastering-responsive-design',
-        title: 'Mastering Responsive Design in Modern Web Development',
-        excerpt: 'A comprehensive guide to creating beautiful, responsive websites that work flawlessly across all devices.',
-        content: `
+    image: '/blog/automation.jpg',
+    author: 'Fatima Zahra Sabbar',
+    category: 'Productivity',
+    tags: ['Automation', 'AI', 'Productivity', 'Workflows'],
+    readTime: '6 min read',
+    published: true,
+  },
+  {
+    slug: 'mastering-responsive-design',
+    title: 'Mastering Responsive Design in Modern Web Development',
+    excerpt: 'A comprehensive guide to creating beautiful, responsive websites that work flawlessly across all devices.',
+    content: `
       <h2>What is Responsive Design?</h2>
       <p>Responsive design is the practice of creating websites that adapt seamlessly to different screen sizes and devices. In an era where mobile traffic exceeds desktop, it's more important than ever.</p>
       
@@ -144,33 +167,37 @@ const seedPosts = [
       <h2>Conclusion</h2>
       <p>Responsive design is not optional in modern web development—it's fundamental. By mastering these techniques, you'll create experiences that delight users on any device.</p>
     `,
-        image: '/blog/responsive-design.jpg',
-        author: 'Fatima Zahra Sabbar',
-        category: 'Design',
-        tags: ['CSS', 'Responsive Design', 'UI/UX', 'Mobile'],
-        readTime: '8 min read',
-        published: true,
-    },
+    image: '/blog/responsive-design.jpg',
+    author: 'Fatima Zahra Sabbar',
+    category: 'Design',
+    tags: ['CSS', 'Responsive Design', 'UI/UX', 'Mobile'],
+    readTime: '8 min read',
+    published: true,
+  },
 ];
 
 async function seedDatabase() {
-    try {
-        await dbConnect();
-        console.log('Connected to MongoDB');
+  try {
+    // Dynamic imports to ensure env vars are loaded first
+    const { default: dbConnect } = await import('../lib/mongodb');
+    const { default: BlogPost } = await import('../models/BlogPost');
 
-        // Clear existing posts
-        await BlogPost.deleteMany({});
-        console.log('Cleared existing blog posts');
+    await dbConnect();
+    console.log('Connected to MongoDB');
 
-        // Insert seed data
-        const result = await BlogPost.insertMany(seedPosts);
-        console.log(`Successfully seeded ${result.length} blog posts`);
+    // Clear existing posts
+    await BlogPost.deleteMany({});
+    console.log('Cleared existing blog posts');
 
-        process.exit(0);
-    } catch (error) {
-        console.error('Error seeding database:', error);
-        process.exit(1);
-    }
+    // Insert seed data
+    const result = await BlogPost.insertMany(seedPosts);
+    console.log(`Successfully seeded ${result.length} blog posts`);
+
+    process.exit(0);
+  } catch (error) {
+    console.error('Error seeding database:', error);
+    process.exit(1);
+  }
 }
 
 seedDatabase();
