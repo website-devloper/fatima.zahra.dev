@@ -29,20 +29,24 @@ const Hero = () => {
             </h1>
 
             <h2 className="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
-              <TypeAnimation
-                sequence={[
-                  t('hero.typeAnimation.1'), 2000,
-                  t('hero.typeAnimation.2'), 2000,
-                  t('hero.typeAnimation.3'), 2000,
-                  t('hero.typeAnimation.4'), 2000,
-                  t('hero.typeAnimation.5'), 2000,
-                  t('hero.typeAnimation.6'), 2000,
-                ]}
-                wrapper="span"
-                speed={50}
-                className="text-hero fw-bold"
-                repeat={Infinity}
-              />
+              {t('hero.typeAnimation.1') !== 'hero.typeAnimation.1' ? (
+                <TypeAnimation
+                  sequence={[
+                    t('hero.typeAnimation.1'), 2000,
+                    t('hero.typeAnimation.2'), 2000,
+                    t('hero.typeAnimation.3'), 2000,
+                    t('hero.typeAnimation.4'), 2000,
+                    t('hero.typeAnimation.5'), 2000,
+                    t('hero.typeAnimation.6'), 2000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  className="text-hero fw-bold"
+                  repeat={Infinity}
+                />
+              ) : (
+                <span className="text-hero fw-bold">Loading...</span>
+              )}
             </h2>
 
             <p className="lead text-white-100 mb-5" style={{ maxWidth: '600px' }} data-aos="fade-up" data-aos-delay="400">
